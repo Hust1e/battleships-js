@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+.game-world {
+    position: relative;
+    width: 1025px;
+    height: 828px;
+    background: url('assets/board.jpg');
+    margin: auto;
+}
+
+.game-ship {
+    position: relative;
+    top: 165px;
+    left: 130px;
+    height: 25px;
+    width: 60px;
+} 
+
+.game-box {
+    height: 94px;
+    width: 96px;
+}
+
+.game-field {
+    position: absolute;
+    left: 170px;
+    top: 97px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 685px;
+    height: 675px;
+}
+
+.input-form {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 833px;
+    left: calc(91vw / 2);
+    width: 170px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.game-info {
+    position: absolute;
+    height: 50vh;
+    width: 271px;
+    background-color: rgb(32, 34, 35);
+    font-size: 24px;
+    padding: 15px;
+    color: white;
+    border: 20px solid black;
+}
+
+.game-info p {
+    margin: 0px 0px;
+}
+
+.hit {
+    background: url(assets/ship.png) no-repeat center center;
+}
+.miss {
+    background: url(assets/miss.png) no-repeat center center;
+}
+.ship {
+    background: url(assets/ship.png) no-repeat center center;
+}
